@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #1d1d1d;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+
+  height: 50px;
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+
+  background-color: #161616;
+}
+
+#logo {
+  height: 90px;
+  width: 90px;
+}
+
+#menu {
+  display: flex;
+  gap: 16px;
+}   
+
+#menu li, a {
+  font-family: Inter, "Hevetica Neue", Helvetica, apple-system, sans-serif;
+  font-size: 13px;
+  list-style: none;
+  text-decoration: none;
+  color: #A3A3A3;
+}
+
+#menu span {
+  padding: 6px;
+  border-radius: 5px;
+
+  background-color: #1d1d1d;
+}
+
+#projects, #contact, #about-me {
+  background-color: #1d1d1d;
+
+  padding: 100px 50px 50px 50px;
+}
+
+#about-me {
+  width: 1000px;
+}
+
+#text-box-about-me h1 {
+  font-family: 'Lato';
+  font-size: 120px;
+  color: rgb(215, 159, 255);
+  margin-bottom: 44px;
+}
+
+#text-box-about-me p {
+  font-family: 'Lato';
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+}
+
+#projects span {
+  font-size: 18px;
+  color: gray;
+}
+
+#projects h2, #contact h2 {
+  font-family: 'Lato';
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgb(77, 6, 255);
+  width: 30px;
+}
+
+#p-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-cards {
+  height: 400px;
+  width: 270px;
+  border-radius: 10px;
+  border: 2px solid #161616;
+}
+
+#contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact-box p {
+  font-family: Inter, "Hevetica Neue", Helvetica, apple-system, sans-serif;
+  color: white;
+}
+
+#contact button {
+  width: 150px;
+  padding: 10px;
+  background-color: rgb(4, 171, 4);
+  color: white;
+}
+
+@media (max-width: 1225px) {
+  #p-cards {
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .d-cards {
+    width: 100%;
+  }
+
+  #text-box-about-me h1 {
+    font-size: 60px;
+  }
+  
+  #text-box-about-me p {
+    font-size: 20px;
+  }
+
+  #about-me {
+    width: 700px;
+  }
+}
